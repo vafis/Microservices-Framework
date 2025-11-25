@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <AssemblyName>MicroserviceBase</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>TheDotNetFactory.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eid.Microservices.Core.Extensions\Eid.Microservices.Core.Extensions.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.EidAuthentiicationMiddleware\Eid.Microservices.EidRequestTokenMiddleware.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.EmpowerIDAuthMiddleware\Eid.Microservices.AuthentiicationMiddleware.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.EngineContextAccessor\Eid.Microservices.EngineContextAccessor.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.JWTBearerGrantMiddleware.csproj\Eid.Microservices.EidJwtBearerGrantMiddleware.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.StartupTaskExample\Eid.Microservices.StartupTaskExample.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.ValidateRequestMiddleware\Eid.Microservices.EidValidateRequestMiddleware.csproj" />
+  </ItemGroup>
+
+</Project>

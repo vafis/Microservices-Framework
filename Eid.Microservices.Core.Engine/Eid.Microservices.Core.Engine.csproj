@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>TheDotNetFactory.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eid.Microservices.Administration\Eid.Microservices.Administration.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.Core.Extensions\Eid.Microservices.Core.Extensions.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.Core\Eid.Microservices.Core.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.EidRbacCheckServiceFilter\Eid.Microservices.EidRbacAuthorizationServiceFilter.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.EmbeddedResourceReader\Eid.Microservices.EmbeddedResourceReader.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.EmpowerIDAuthMiddleware\Eid.Microservices.AuthentiicationMiddleware.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.JWTBearerGrantMiddleware.csproj\Eid.Microservices.EidJwtBearerGrantMiddleware.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.ValidateRequestMiddleware\Eid.Microservices.EidValidateRequestMiddleware.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.HttpOverrides">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.httpoverrides\2.2.0\lib\netstandard2.0\Microsoft.AspNetCore.HttpOverrides.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

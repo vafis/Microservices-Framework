@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>TheDotNetFactory.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eid.Microservices.Core.Engine\Eid.Microservices.Core.Engine.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.Core\Eid.Microservices.Core.csproj" />
+  </ItemGroup>
+
+</Project>

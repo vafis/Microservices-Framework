@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>TheDotNetFactory.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eid.Microservices.BackChannelLoggerService\Eid.Microservices.BackChannelLoggerService.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.Core.ValidateModelActionFilter\Eid.Microservices.ValidateModelActionFilter.csproj" />
+    <ProjectReference Include="..\Eid.Microservices.EidRbacCheckServiceFilter\Eid.Microservices.EidRbacAuthorizationServiceFilter.csproj" />
+  </ItemGroup>
+
+</Project>
